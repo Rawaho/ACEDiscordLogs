@@ -1,0 +1,1178 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ACEmulator - ace_core</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/268101200237428736/3336921f4e5abe033bef797c70a0c94d.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">ACEmulator</div>
+<div class="channel-name">ace_core</div>
+<div class="misc">168 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">15-Nov-17 01:28 PM</span>
+<div class="msg-content">
+o/</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">15-Nov-17 04:22 PM</span>
+<div class="msg-content">
+Hail</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">15-Nov-17 04:52 PM</span>
+<div class="msg-content">
+Hello</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">15-Nov-17 05:44 PM</span>
+<div class="msg-content">
+how goes?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">16-Nov-17 01:40 AM</span>
+<div class="msg-content">
+Welcome</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">16-Nov-17 03:13 AM</span>
+<div class="msg-content">
+I don&#39;t have permission to see messages in here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">16-Nov-17 03:15 AM</span>
+<div class="msg-content">
+Can you see this? This is a brand new channel</div>
+<div class="msg-content">
+testing...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">16-Nov-17 03:18 AM</span>
+<div class="msg-content">
+yes I see it now</div>
+<div class="msg-content">
+thank you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">25-Nov-17 03:01 PM</span>
+<div class="msg-content">
+<span class="mention" title="Nalindar#6791">@Nalindar</span> Have you heard from anon lately? They still interested in moving this forward?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">25-Nov-17 03:03 PM</span>
+<div class="msg-content">
+Last I heard he was busy with holidays. I&#39;m hoping to hear back by monday/tuesday. If nothing happens we&#39;ll kill the channel.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">29-Nov-17 03:06 PM</span>
+<div class="msg-content">
+Any news?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">29-Nov-17 03:22 PM</span>
+<div class="msg-content">
+&#127951;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">29-Nov-17 04:28 PM</span>
+<div class="msg-content">
+They have been afk a few days, no updates. We can kill the channel if you&#39;re tired of looking at it :p if there is movement we can recreate it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">30-Nov-17 09:47 AM</span>
+<div class="msg-content">
+is userunknown anonsheron?</div>
+<div class="msg-content">
+anonsheron just emoji&#39;d a post in dev</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">30-Nov-17 10:02 AM</span>
+<div class="msg-content">
+Negative</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">30-Nov-17 10:08 AM</span>
+<div class="msg-content">
+think this channel is deletable at this point</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">30-Nov-17 10:21 AM</span>
+<div class="msg-content">
+He was on today,  trying to get an update</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">30-Nov-17 12:42 PM</span>
+<div class="msg-content">
+It&#39;s not like we&#39;re in a rush, so if he needs more time it&#39;s not a big deal.</div>
+<div class="msg-content">
+It&#39;s good to keep the channels open.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 03:46 AM</span>
+<div class="msg-content">
+hello &#128515;</div>
+<div class="msg-content">
+I have been really busy lately. If you guys have any specific questions about anything just ask! I can answer many technical questions about the client, server, infrastructure, overall design - things that I am sure would save you time and point you in the right direction. I only ask that you don&#39;t request anything too personal about who I am or how I am connected to AC.</div>
+<div class="msg-content">
+Here are the things I can&#39;t share: code, tools, information I don&#39;t know the answer to. If you are working on something, trying to understand a particular element of the game, ask, and I&#39;ll answer to the best of my ability.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 04:28 AM</span>
+<div class="msg-content">
+Sounds good &#128515;</div>
+<div class="msg-content">
+One question I was thinking about, if you know anything on this, was if the server had any kind of latency handling.  EG was it simply first one wins, or did it try to account for latency differences in any way?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">01-Dec-17 05:18 AM</span>
+<div class="msg-content">
+Thanks for your support user. Your terms are acceptable. &#128515;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:12 AM</span>
+<div class="msg-content">
+Latency differences in terms of different clients, or different servers?</div>
+<div class="msg-content">
+As far as I know, for handling different clients there would not be any latency handling in the traditional sense, except that physics would be predicted by the server, but that doesn&#39;t factor in latency in any meaningful way.</div>
+<div class="msg-content">
+For server to server, which isn&#39;t applicable here, there would be some repeated/duplicated condition checks to ensure an action was really valid, because there is latency between servers and it&#39;s possible the state could have changed.</div>
+<div class="msg-content">
+There is latency handling in terms of determining how efficiently network data is sent/received at the base network layer, but that&#39;s not related to game code in any way as far as I know.</div>
+<div class="msg-content">
+&quot;Flow Control&quot;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 10:19 AM</span>
+<div class="msg-content">
+do you know what the range check is for the client to determine what objects it discards? ie, in ACE currently when in town hub, portals are removed from the far end of the aluvian section when a client sits in the annex section for some amount of time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:20 AM</span>
+<div class="msg-content">
+There is a timer that begins when an object is marked as &quot;lost&quot;<span class="msg-edited" title="01-Dec-17 10:20 AM">(edited)</span></div>
+<div class="msg-content">
+It is marked for destruction</div>
+<div class="msg-content">
+Beyond that, I can&#39;t remember off the top of my head, I&#39;d have to look</div>
+<div class="msg-content">
+As far as range checks, there is, of course, cells that are considered &quot;visible&quot; by the client which is determined by the cell data</div>
+<div class="msg-content">
+That&#39;s a tricky subject I think</div>
+<div class="msg-content">
+Best practice would be to only send information on creatures the client can potentially see</div>
+<div class="msg-content">
+So you can use the list of visible cells</div>
+<div class="msg-content">
+&quot;stab list&quot; they are called</div>
+<div class="msg-content">
+Check CObjCell for that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 10:26 AM</span>
+<div class="msg-content">
+visible cells is of course not the same as objects being occluded by landscape/walls, whatever, yeah?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:31 AM</span>
+<div class="msg-content">
+Good point, I can&#39;t remember off the top of my head, there may have been a range check of some sort</div>
+<div class="msg-content">
+NONVISIBLE<i>OBJECT</i>DESTRUCTION_TIME</div>
+<div class="msg-content">
+25 seconds in the client</div>
+<div class="msg-content">
+My speculation, since I can&#39;t remember, is if an object is sent but not visible for that long, it&#39;s going to be destroyed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 10:34 AM</span>
+<div class="msg-content">
+still feels a little vague on whats considered not visible</div>
+<div class="msg-content">
+a switch on wall behind a door would be not &quot;visible&quot; but still in the client</div>
+<div class="msg-content">
+that might be be a poor example too</div>
+<div class="msg-content">
+i would also expect a room that can&#39;t be entered but butted up to a hallway you run through would have the same  effect, you&#39;d be able to target items in that room, but could never &quot;see&quot; visually</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 10:37 AM</span>
+<div class="msg-content">
+I have not looked at an example with dungeons, with the world it seemed to track based on landblocks, when you moved from one landblock to another, the further landblock(s) got cleaned up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:37 AM</span>
+<div class="msg-content">
+For outside that&#39;s mostly true</div>
+<div class="msg-content">
+Dungeons you cannot send everything in the dungeon at once</div>
+<div class="msg-content">
+You will find that if you run to the other side of the dungeon the objects are already cleaned up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 10:38 AM</span>
+<div class="msg-content">
+right</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 10:40 AM</span>
+<div class="msg-content">
+i initially thought it was Z based, but a long dungeon disproved that..  so its obviously a much tighter range</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:41 AM</span>
+<div class="msg-content">
+I&#39;m fairly confident it&#39;s predominantly based on the stablist</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 10:41 AM</span>
+<div class="msg-content">
+no reason to doubt your instincts</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:41 AM</span>
+<div class="msg-content">
+That&#39;s why you cannot see objects directly on the floor below you even though they would be in range, but you can see them high or low (same distance) if they are in the same room</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 10:41 AM</span>
+<div class="msg-content">
+do you know where NONVISIBLE<i>OBJECT</i>DESTRUCTION_TIME is used?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 10:42 AM</span>
+<div class="msg-content">
+dunno that ACE really has the concept of stablist yet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:42 AM</span>
+<div class="msg-content">
+CObjectMaint::AddObjectToBeDestroyed</div>
+<div class="msg-content">
+An object that is first created is marked to be destroyed, but will be unmarked for destroyed after it&#39;s placed in a visible cell</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 10:42 AM</span>
+<div class="msg-content">
+destruction<i>time = COERCE</i>DOUBLE(Timer::cur_time.Cmd) + 25.0;</div>
+<div class="msg-content">
+that tracks &#128521;</div>
+<div class="msg-content">
+compiler optimizations for the lose</div>
+<div class="msg-content">
+that was in my callstacks when I was looking at it on the world too, nice</div>
+<div class="msg-content">
+0 d 00507bb0     0001 (0001)  0:<b> acclient!CObjectMaint::ReleaseObjCell<br /> 1 d 00511f40     0001 (0001)  0:</b> acclient!CPhysicsObj::prepare<i>to</i>leave<i>visibility<br /> 2 d 00514220     0001 (0001)  0:<b> acclient!CPhysicsObj::leave</i>visibility<br /> 3 d 0052f480     0001 (0001)  0:</b> acclient!CLandBlock::release<i>visible</i>cells<br /> 4 d 00504f50     0001 (0001)  0:<b> acclient!LScape::release<i>visible</i>cells<br /> 5 d 0052def0     0001 (0001)  0:</b> acclient!CEnvCell::flush_cells<br /> 6 e 00508f70     0001 (0001)  0:<i></i> acclient!CObjectMaint::AddObjectToBeDestroyed</div>
+<div class="msg-content">
+do you know what m_colGameplayOptions structure is like.  It is the one that I&#39;m having the hardest time making head or tails of</div>
+<div class="msg-content">
+I think its packing some kind of other structure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 10:57 AM</span>
+<div class="msg-content">
+yeah it&#39;s a huge pain in the ass part of player module</div>
+<div class="msg-content">
+you don&#39;t need it unless you want to save/restore window settings</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 10:58 AM</span>
+<div class="msg-content">
+ok I wasn&#39;t sure if there was anything else, but if its just the windows then we can likely defer</div>
+<div class="msg-content">
+We have the basic layout, just some unknowns</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/260242247444987904/465e26b9f728d31bc7f84bbca217644f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ddevec#7356">ddevec</span>
+<span class="msg-date">01-Dec-17 11:00 AM</span>
+<div class="msg-content">
+I&#39;m pretty sure I traced it to visibility within cells when I was figuring out how that worked (for tracking), although I&#39;m never 100% sure digging through all that disassembled slop.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 11:00 AM</span>
+<div class="msg-content">
+Different types are different values, you&#39;ll have to map them</div>
+<div class="msg-content">
+There&#39;s a lot of them</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 11:02 AM</span>
+<div class="msg-content">
+oh one of the ones we were hitting was this bitmember field for some of the movementParameters</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/260242247444987904/465e26b9f728d31bc7f84bbca217644f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ddevec#7356">ddevec</span>
+<span class="msg-date">01-Dec-17 11:03 AM</span>
+<div class="msg-content">
+Do you have any intuition as to any quirks of the AC physics engine relative to a commodity engine, like bullet?  I&#39;ve run through how the physics engine works in some detail, but I&#39;m not by any means an expert on game design, or game physics, and I&#39;m not sure how something like AC&#39;s SPHEREPATH for collision detection would reconcile when used as a predictor for a more modern engine.</div>
+<div class="msg-content">
+I&#39;m not sure if that was a clear question -- I was trying to say:<br />AC uses a series of spheres to detect collisions<br />We may not use AC&#39;s client&#39;s physics engine directly (if we don&#39;t have to)<br />Would a more modern engine (something like bullet) handle physics collisions in a way you would expect created a user-visible disjunction between the client&#39;s calculations/predictions, and the servers?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 11:05 AM</span>
+<div class="msg-content">
+If you want proper behavior you&#39;ll want to use the AC physics</div>
+<div class="msg-content">
+AC physics isn&#39;t just collisions</div>
+<div class="msg-content">
+It&#39;s the animation system, it&#39;s sticky movement, it&#39;s predictability</div>
+<div class="msg-content">
+Also, interpolation kind of, when things get out of sync</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/260242247444987904/465e26b9f728d31bc7f84bbca217644f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ddevec#7356">ddevec</span>
+<span class="msg-date">01-Dec-17 11:07 AM</span>
+<div class="msg-content">
+Yes, I suppose I&#39;m trying to figure out how much of it we have to spin ourselves.  From my understanding teh animation system can determine timings on when objects change velocities, and sticky movement can control positions, but the actual collision detection could be handled by an OTC engine, maybe? (assuming we had/could make wrappers that reconciled some of the AC-centric oddities, like sticky bits, and interpolation)</div>
+<div class="msg-content">
+I also have questions on the animation system, because I never really figured it out.  From my understanding, animations were queued on objects, and sometimes had assosicated velocities.  Was this basically to accomplish something like the player&#39;s character finishes stepping before velocity = 0 (as opposed to a sudden jerk-stop when the w key is released)</div>
+<div class="msg-content">
+Also, thank you for this information, your depth of understanding is clearly great, and this is very useful to us.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 11:14 AM</span>
+<div class="msg-content">
+Yes, I second that, very useful stuff.  I appreciate the help</div>
+<div class="msg-content">
+Adding this before I head home.  the movement_params.bitfield seems to have a lot of different options.  I tried to collect a number of them here, but curious if there is a clean enum or list that covers what each bit represents.</div>
+<div class="msg-content">
+<a href="https://pastebin.com/WEZnNfwT">https://pastebin.com/WEZnNfwT</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 01:19 PM</span>
+<div class="msg-content">
+Stairs, sliding, friction, things like that would be of concern if you were trying to use something else</div>
+<div class="msg-content">
+Much easier to use the real thing</div>
+<div class="msg-content">
+Animations are a bit complicated but there&#39;s 3 states really</div>
+<div class="msg-content">
+forward state, sidestep state, turning state, then of course theres the animation sequences themselves</div>
+<div class="msg-content">
+Sometimes you can have a weird blend happening like doing a lifestone animation and side stepping at the same time</div>
+<div class="msg-content">
+Spellcasting and moving at the same time</div>
+<div class="msg-content">
+The high bits on the animation &quot;command&quot; are the type of animation or purpose</div>
+<div class="msg-content">
+the low bits are the index of the animation</div>
+<div class="msg-content">
+For example, the 0x1000000 flag (CM_Action) is something you&#39;ll only see in the queued list of sequences</div>
+<div class="msg-content">
+shouldn&#39;t see the flag in the forward/sidestep/turn commands</div>
+<div class="msg-content">
+but it&#39;s the low bits that are the actual index itself</div>
+<div class="msg-content">
+Motion<i>Wave = 0x13000087,   is actually   CM</i>Action|CM<i>ChatEmote|CM</i>Mappable|0x87</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 01:28 PM</span>
+<div class="msg-content">
+when you say weird blend, a lifestone animation is supposed to freeze you entirely, locking out any escape movement, would a better example be like say a recall anim?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 01:28 PM</span>
+<div class="msg-content">
+I can&#39;t recall what actually locks a player out</div>
+<div class="msg-content">
+If you remember back in the day, people could do lifestone animations then run and jump around and sparkles would be going off everywhere</div>
+<div class="msg-content">
+That&#39;s all sort of unimportant though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 01:30 PM</span>
+<div class="msg-content">
+yeah that was usually <i>YMCA</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 01:30 PM</span>
+<div class="msg-content">
+CMotionTable::GetObjectSequence  is the core of what blends animations, kind of</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">01-Dec-17 01:30 PM</span>
+<div class="msg-content">
+Could do that through to the end. Not that it matters :p</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 01:30 PM</span>
+<div class="msg-content">
+lifestone might be one of the only lockouts</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 01:31 PM</span>
+<div class="msg-content">
+The client sends commands as &quot;raw commands&quot; to the server, basically the key presses expressed in command/state form, very simple really</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 01:31 PM</span>
+<div class="msg-content">
+granted I was never melee so perhaps there a bunch fro those</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 01:31 PM</span>
+<div class="msg-content">
+The server in turn digests, processes it, spits out an&quot;interpolated state&quot;</div>
+<div class="msg-content">
+The client receives the interpolated state for all objects in the game that are moving</div>
+<div class="msg-content">
+That interpolated state is the same one you see in 0xF745 (CreateObject)</div>
+<div class="msg-content">
+That&#39;s just telling the client what the current animation state is when it first receives the object</div>
+<div class="msg-content">
+Anytime it changes, the server tells the client</div>
+<div class="msg-content">
+If the position changes too much, or enough time passes and the position changed, the server also spits out exact positional data as well</div>
+<div class="msg-content">
+So there&#39;s the &quot;raw motion state&quot; created by the client that is just a reflection of the keyboard/emote input, that is sent to the server, but the only thing clients ever receive are &quot;interpolated motion states&quot;<span class="msg-edited" title="01-Dec-17 01:35 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 01:40 PM</span>
+<div class="msg-content">
+just to get this out of the way, how do want us to credit you for this assistance?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">01-Dec-17 01:49 PM</span>
+<div class="msg-content">
+Someone who cares about AC&#39;s survival gave you some anonymous help</div>
+<div class="msg-content">
+I don&#39;t need/want any personal credit for this help</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">01-Dec-17 02:07 PM</span>
+<div class="msg-content">
+In regards to using the clients physics as suggested, do you think its performance will scale server side with many active clients/objects? It was suggested to us that the client physics code wasn&#39;t optimized and thus not ideal to be used on the server side<span class="msg-edited" title="01-Dec-17 02:14 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 04:02 PM</span>
+<div class="msg-content">
+you used to be able to move when lifestoning.  They may have changed that</div>
+<div class="msg-content">
+It would record your location wherever you were when finishing the animation too</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 04:08 PM</span>
+<div class="msg-content">
+pretty sure for that exact reasoning is why it became a hard freeze &#128521;</div>
+<div class="msg-content">
+instead of changing the coding to store the start pos, vs the finish pos</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">01-Dec-17 04:37 PM</span>
+<div class="msg-content">
+So based on the hint there, I pulled the following flags for the actions, any help clarifying the interpertation is welcome.  unfortunatly the decompiled source doesn&#39;t show CM_Action or similar</div>
+<div class="msg-content">
+0x80000000    Stance?<br />0x40000000    State?<br />0x20000000    TurnSidestep?<br />0x10000000    Action<br />0x08000000    UIInterface?<br />0x04000000    CameraMove?<br />0x02000000    ChatEmote<br />0x01000000    Mappable</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">01-Dec-17 04:59 PM</span>
+<div class="msg-content">
+you could move yourself while lifestoning at end of retail</div>
+<div class="msg-content">
+but if you moved too far it would fail</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/186683724799279104/028fc8dc589b9673313e78deba8194a3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nalindar#6791">Nalindar</span>
+<span class="msg-date">01-Dec-17 05:00 PM</span>
+<div class="msg-content">
+I don&#39;t think there was a single animation you couldn&#39;t break out of with jump/slides</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Dec-17 05:17 PM</span>
+<div class="msg-content">
+interesting</div>
+<div class="msg-content">
+you can&#39;t break it in ACE</div>
+<div class="msg-content">
+but that&#39;s also because we don&#39;t respond to jump commands</div>
+<div class="msg-content">
+so the jump break is a server side override</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">02-Dec-17 05:27 AM</span>
+<div class="msg-content">
+The MovementManager, MotionTable, CMotionInterp, that whole set of things is what you&#39;ll need for proper movement/animation blending states</div>
+<div class="msg-content">
+MovementManager would be <i>very</i> useful to reverse engineer</div>
+<div class="msg-content">
+You already know by the network protocol there are commands like &#39;turn to this object&#39; &#39;move to this object&#39; etc. except what you may not know, although it is intuitive once you do, is that the server is executing the same movement code the client is, so when the server says &#39;run towards this object&#39; to the client, the server also begins executing the same logic the client does in order to animate it in that direction, the server will then only update the client periodically on the position of the object, but the server knows the client is already animating it to move in the right manner</div>
+<div class="msg-content">
+So for monsters to work proper, you not only need physics, you need this movement code</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/260242247444987904/465e26b9f728d31bc7f84bbca217644f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ddevec#7356">ddevec</span>
+<span class="msg-date">02-Dec-17 05:42 AM</span>
+<div class="msg-content">
+Okay, that was useful.  I&#39;ve privately parsed and pseudo-documented much of those classes.  I was still caught up on a few bits (e.g. tracing how the interpreted motions get translated into velocities on an object).  That path was unclear, my suspicion is its obfuscated by forwarding it though some strucuture that is opaque in the sea of poorly decompiled client.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223234079053709322/4670c75386b2d360653825eee2577f6c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Zegeger#368">Zegeger</span>
+<span class="msg-date">02-Dec-17 05:32 PM</span>
+<div class="msg-content">
+<span class="mention" title="Amauxi#4768">@Amauxi</span>  do you have any knowledge of how the fragment ID&#39;s work?  The client seems to read them as a 64 bit UInt.  There seems to be a flag (most significant Byte &amp; 0x80) that identifies a fragment as ephemeral, which seems to look at WORD2 to perform ordering to see if it is newer or older then what we already have.    Additionally it looks like there are several other flag values as well.  So the Most Significant Word is often 0x830D.  Not clear yeat what the 3 or D mean.<br />The lower DWORD seems to be a straight ID value, but when the Ephemeral flag is set, it seems to stay the same and only WORD2 changes for the same types of messages pertaining to the same objects?<br />We currently don&#39;t match any of that behavior and the client seems to behave, so not sure how strictly needed it is either, but seems best to match what we can.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">03-Dec-17 10:18 AM</span>
+<div class="msg-content">
+I would just treat it as a sequential counter. I can&#39;t remember off the top of my head.</div>
+<div class="msg-content">
+I would only be speculating on purposes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">07-Dec-17 03:53 PM</span>
+<div class="msg-content">
+<span class="mention" title="Amauxi#4768">@Amauxi</span> Why were acid hotspot weenies transmitted to the client when they&#39;re invisible to the client and the server controlled the collisions/damage? I&#39;m curious why this weenie was sent to the client but other invisible weenies weren&#39;t.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">07-Dec-17 03:55 PM</span>
+<div class="msg-content">
+my current working theory, I think HW might agree with, is if a weenie had the Visibility Bool set to true (1), the item was never sent to the client</div>
+<div class="msg-content">
+we never saw that bool for anything pcapped</div>
+<div class="msg-content">
+we did see the NoDraw bool, on house objects IIRC</div>
+<div class="msg-content">
+you don&#39;t see it, but the client had to see it to properly set up the cell barrier</div>
+<div class="msg-content">
+hopefully UU can provide more clairity</div>
+<div class="msg-content">
+you&#39;ll also find that Sewer, Refreshing Pool, Mag-Ma, Mini Mag-Ma &amp; Electric Floor were transmitted to the client, probably others i don&#39;t know off the top of my head</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">17-Dec-17 06:52 AM</span>
+<div class="msg-content">
+they weren&#39;t invisible to the client</div>
+<div class="msg-content">
+if you don&#39;t send them, you don&#39;t see the acid or magma</div>
+<div class="msg-content">
+the floors that have magma would be bare if they weren&#39;t sent</div>
+<div class="msg-content">
+they were only invisible to the UI, as in: you can&#39;t click them</div>
+<div class="msg-content">
+iirc</div>
+<div class="msg-content">
+let me check</div>
+<div class="msg-content">
+yeah the dungeon floors look bare without sending them</div>
+<div class="msg-content">
+invisible weenies aren&#39;t sent to the client specifically because they aren&#39;t visible</div>
+<div class="msg-content">
+magma and acid are visible</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">18-Dec-17 06:32 AM</span>
+<div class="msg-content">
+The client has a built in profiler which I can activate with the m_IsActive variable, however, none of the stats seem to be populating. Am I missing something simple or was more profiling code not compiled into the client?</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/380151018505371649/392006229871820800/image.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/380151018505371649/392006229871820800/image.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Amauxi#4768">Amauxi</span>
+<span class="msg-date">19-Dec-17 09:20 AM</span>
+<div class="msg-content">
+I am not sure what the public client had in it</div>
+<div class="msg-content">
+there is a console with certain commands you can use, no idea which ones or which ones work</div>
+<div class="msg-content">
+you can do things like change the seasons I believe</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">19-Dec-17 09:24 AM</span>
+<div class="msg-content">
+the debug console, yea I got that working. Didn&#39;t seem very useful though. My patch was a bit buggy so I didn&#39;t spend too much time on it either</div>
+<div class="msg-content">
+My goal with this client profiler is to help trim the clients UI/gfx fat so the client + decal can be used to help stress test ACE. I have the client bypassing drawing the world now which helped shave a bunch of CPU, but, I haven&#39;t been able to not load textures yet so each client still uses a decent amount of memory.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

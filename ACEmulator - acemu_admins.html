@@ -1,0 +1,745 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ACEmulator - acemu_admins</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/268101200237428736/3336921f4e5abe033bef797c70a0c94d.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">ACEmulator</div>
+<div class="channel-name">acemu_admins</div>
+<div class="misc">82 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">25-Nov-17 02:32 PM</span>
+<div class="msg-content">
+<span class="mention">#ace_core</span> feels like a bust, going to delete it on monday i think</div>
+<div class="msg-content">
+<span class="mention" title="Kaos#869">@Kaos</span> you ever coming back dude? &#128528;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">25-Nov-17 03:01 PM</span>
+<div class="msg-content">
+Let&#39;s see what hw says, maybe anon is busy with holidays.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">25-Nov-17 03:06 PM</span>
+<div class="msg-content">
+no problem</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">02-Dec-17 09:26 AM</span>
+<div class="msg-content">
+what&#39;d you delete in <span class="mention">#acemu_core</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">02-Dec-17 09:30 AM</span>
+<div class="msg-content">
+the chat regarding ace_core</div>
+<div class="msg-content">
+mog was asking questions, i didn&#39;t want things to get out of hand and rumors to start</div>
+<div class="msg-content">
+plus, i didn&#39;t want the knowledge of our ace<i>core source to leak out via our suspected acemu</i>core leak</div>
+<div class="msg-content">
+I spoke with mog via dm about it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">02-Dec-17 09:33 AM</span>
+<div class="msg-content">
+i want to do a sting op and feed false info to figure out who the leak it heh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">02-Dec-17 09:34 AM</span>
+<div class="msg-content">
+Well, it&#39;s possible the info Rawaho found out about was just someone keeping the channels open, similar to what I do with Rawaho.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">13-Dec-17 03:13 PM</span>
+<div class="msg-content">
+<span class="mention" title="Mag-nus#3675">@Mag-nus</span> not sure how best to discuss the info from <span class="mention">#deleted-channel</span>...</div>
+<div class="msg-content">
+whatever gets said in acemu_core could get out.. so hesitant to do so there</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">13-Dec-17 05:32 PM</span>
+<div class="msg-content">
+Per floaters request, it must stay there. We don&#39;t need to cite our source and can continue to work as-is.</div>
+<div class="msg-content">
+I suspect pea will eventually leak out the fact that he helped us anyway for the attention.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">13-Dec-17 05:49 PM</span>
+<div class="msg-content">
+yeah maybe</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">16-Jan-18 06:36 PM</span>
+<div class="msg-content">
+<a href="http://derethforever.com/">http://derethforever.com/</a></div>
+<div class="msg-content">
+<span class="mention" title="Mag-nus#3675">@Mag-nus</span> clearly Mogwai decided to pursue a fork</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">17-Jan-18 01:10 AM</span>
+<div class="msg-content">
+The use of the API does suggest it&#39;s mogwai</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">17-Jan-18 02:32 AM</span>
+<div class="msg-content">
+6:20 AM] Mag-nus: DerethForever physics look really good. I&#39;m assuming that&#39;s your fork.<br />[6:49 AM] Hollow Minion: i helped initially, but ultimately decided i didn&#39;t care enough about AC to continue with any emu effort whatsoever<br />[6:50 AM] Hollow Minion: i walked shortly after i had the first renders done</div>
+<div class="msg-content">
+Since mogwai doesn&#39;t wish to dev anymore, I think it makes sense to remove him from the core channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">18-Jan-18 03:42 AM</span>
+<div class="msg-content">
+I&#39;m going to be more offline than on for the next few days. Having looked briefly at the AGPL license, I would agree with raw that a switch going forward would force any further forks or taking of code, databases be published openly. I&#39;d recommend you give that a look and see if you concur, and if so we&#39;ll convert all our open projects over to that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">19-Jan-18 10:49 AM</span>
+<div class="msg-content">
+I think AGPL does solve our problem. It&#39;s basically what we were hoping for, we just didn&#39;t realize GPL didn&#39;t apply to network servers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">22-Jan-18 02:58 PM</span>
+<div class="msg-content">
+whats the story with Og?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">22-Jan-18 02:58 PM</span>
+<div class="msg-content">
+I didn&#39;t pry. He&#39;s probably upset about the removal from ace_floater</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">22-Jan-18 03:01 PM</span>
+<div class="msg-content">
+he didn&#39;t give a reason other than just &quot;no&quot; eh?</div>
+<div class="msg-content">
+i&#39;m not surprised considering he&#39;s one of the DF leaders</div>
+<div class="msg-content">
+have you read this?</div>
+<div class="msg-content">
+<a href="https://blog.gerv.net/2013/02/relicensing-when-do-you-have-to-ask/">https://blog.gerv.net/2013/02/relicensing-when-do-you-have-to-ask/</a></div>
+<div class="msg-content">
+i&#39;m still not sure we need permissions from people to go GPLv3 to AGPLv3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">22-Jan-18 03:13 PM</span>
+<div class="msg-content">
+Yes. I&#39;m not 100% sure on it though.</div>
+<div class="msg-content">
+Read the last paragraph</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">27-Jan-18 01:56 PM</span>
+<div class="msg-content">
+are you working on anything atm, Mag?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">27-Jan-18 02:11 PM</span>
+<div class="msg-content">
+more datloader refactoring</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">27-Jan-18 02:42 PM</span>
+<div class="msg-content">
+cool, i might take a stab at dumping all the api stuff this weekend.. no promises that i don&#39;t run into a roadblock &#128521;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">28-Jan-18 12:05 PM</span>
+<div class="msg-content">
+no roadblocks in removing the api/secureauth changes</div>
+<div class="msg-content">
+got some more cleanup to do plus some sql work, but its working seemingly</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 05:49 AM</span>
+<div class="msg-content">
+hehe, looks like you need to turn on squash merge for aclogview &#128521;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 05:57 AM</span>
+<div class="msg-content">
+i thought i did squash</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 05:58 AM</span>
+<div class="msg-content">
+it changes per repo or sometimes resets what you select i&#39;ve found</div>
+<div class="msg-content">
+but either way I think i fixed it for any of us going forward by a setting change on the repo itself</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 05:58 AM</span>
+<div class="msg-content">
+allow squash merge still checked</div>
+<div class="msg-content">
+did i break something?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 05:59 AM</span>
+<div class="msg-content">
+not at all</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 06:00 AM</span>
+<div class="msg-content">
+just adds more commits to the log, not bad afaik... but i know some of us end up going commit crazy in our PRs so it&#39;s probably best we squash &#39;em</div>
+<div class="msg-content">
+i had a thought this morning that for world db releases I might be doing more effort on them than I have to.. seems like there might be some automation i can do with appveyor that nets the same results of my manual work...</div>
+<div class="msg-content">
+looking into that for a bit before I pick back up with the missing starter gear</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 12:47 PM</span>
+<div class="msg-content">
+awe yeah...</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/379782319822733313/408045541667241984/log.txt">
+Attachment: log.txt (4.2 KB)
+</a>
+</div>
+<div class="msg-content">
+now to debug release creation and then that&#39;ll take a good chunk of db release time down</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 12:50 PM</span>
+<div class="msg-content">
+nice, i have no idea what i&#39;m looking at lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 12:50 PM</span>
+<div class="msg-content">
+basically its creating the world database release</div>
+<div class="msg-content">
+the only step thats failing now is publishing the release to repo</div>
+<div class="msg-content">
+that way it&#39;ll become automatic when PRs are accepted to ACE-World repos, it would compile for release</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 12:53 PM</span>
+<div class="msg-content">
+ahh that&#39;s good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 01:13 PM</span>
+<div class="msg-content">
+think i got it.. lets see if it shows up here in about 20 minutes &#128516;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 01:20 PM</span>
+<div class="msg-content">
+btw, i emailed zegeger via his github email a few days ago, no response yet.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 01:25 PM</span>
+<div class="msg-content">
+I do wonder what happened there...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 02:14 PM</span>
+<div class="msg-content">
+got the release creation working... the zip file included paths so making a tweak to the script and hopefully that fixes that</div>
+<div class="msg-content">
+just had another thought that looks like it could work nicely too, what do you think about this idea?<br />so we have this file here (<a href="https://github.com/ACEmulator/ACE/blob/master/Source/AppVeyor/MySqlInstall.bat)">https://github.com/ACEmulator/ACE/blob/master/Source/AppVeyor/MySqlInstall.bat)</a> which is part of ACE&#39;s appveyor build/test process</div>
+<div class="msg-content">
+it would appear I could add a script upon any successful release of ACE-World db to automatically go in and update that file to point to the latest db release..</div>
+<div class="msg-content">
+i&#39;m not sure if there are downsides to automatically updating that reference, other than every time a PR is accept to the world repo a commit gets fired off on the ACE side</div>
+<div class="msg-content">
+certainly to me an interesting idea</div>
+<div class="msg-content">
+<a href="https://github.com/LtRipley36706/16PY/releases/latest">https://github.com/LtRipley36706/16PY/releases/latest</a> is entirely automated now.. &#128516;</div>
+<div class="msg-content">
+will need to make a few tweaks and will be able to apply that to ACE-World and ACE-World-16PY no problem</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 03:01 PM</span>
+<div class="msg-content">
+i wouldn&#39;t auto update ACE at this point</div>
+<div class="msg-content">
+that db auto release is very nice though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 03:15 PM</span>
+<div class="msg-content">
+can you see this <a href="https://ci.appveyor.com/project/LtRipley36706/16py">https://ci.appveyor.com/project/LtRipley36706/16py</a> ?</div>
+<div class="msg-content">
+i&#39;m curious if your view permissions extend to that since you do have access to the 16py db</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">31-Jan-18 03:21 PM</span>
+<div class="msg-content">
+Project not found or access denied.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">31-Jan-18 03:23 PM</span>
+<div class="msg-content">
+ok.. figured it was a 50/50 shot they were using github permissions</div>
+<div class="msg-content">
+its not really important, just has the same output from that log i posted earlier</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">01-Feb-18 07:03 AM</span>
+<div class="msg-content">
+so that test of the ACE reference update was successful after it published the release. I can turn that part off no problem if you feel it isn&#39;t needed.</div>
+<div class="msg-content">
+also looks like DF is starting on their so called client physics port, i can&#39;t imagine they&#39;re not using the source they have like we are however, just wouldn&#39;t make much sense really</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">02-Feb-18 05:33 AM</span>
+<div class="msg-content">
+Do you know what progress DF has made on client physics?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">02-Feb-18 06:39 AM</span>
+<div class="msg-content">
+Nothing other than what their gitlab channel shows which was simply that a branch was created so far<span class="msg-edited" title="02-Feb-18 06:47 AM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">02-Feb-18 09:50 AM</span>
+<div class="msg-content">
+from gitlab recently ish<br /><div class="pre">ec20fa2c: wip<br /> - Behemoth of Tenkarrdun<br /><br />c79d19ba: started the switch to Loc (with Vector3) instead of Position.  significant progress in update_object.  keeping headers and line numbers of decompiled client as references.<br /> - Behemoth of Tenkarrdun<br /></div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/268850059842551810/3bb999bc2923de70fbefa5d27aad6e5a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mag-nus#3675">Mag-nus</span>
+<span class="msg-date">02-Feb-18 09:52 AM</span>
+<div class="msg-content">
+pretty sure I said that&#39;s something i was working on. <i>sigh</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/164868871692615680/6448df9e54bab0288f1327c7dd032e5d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ripley#1">Ripley</span>
+<span class="msg-date">03-Feb-18 09:33 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=E33QzSV4OWQ">https://www.youtube.com/watch?v=E33QzSV4OWQ</a></div>
+<div class="msg-content">
+the last second of the video tells you everything you need to know about how DF will proceed...</div>
+<div class="msg-content">
+<a href="https://github.com/bigboydaddysonicthehedgehog/PhatACOneHitKill">https://github.com/bigboydaddysonicthehedgehog/PhatACOneHitKill</a></div>
+<div class="msg-content">
+exploit hunting already &#128558;<span class="msg-edited" title="03-Feb-18 09:38 PM">(edited)</span></div>
+<div class="msg-content">
+sanity checking client requests prevents the above exploit from working</div>
+</div>
+</div>
+</div>
+</body>
+</html>
